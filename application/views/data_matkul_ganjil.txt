@@ -1,0 +1,51 @@
+<option disabled>---SEMESTER 1---</option>
+<option>MPK-4001 - Pendidikan Agama Islam</option>
+<option>MPK-4002 - Pendidikan Agama Katolik</option>
+<option>MPK-4003 - Pendidikan Agama Protestan</option>
+<option>MPK-4004 - Pendidikan Agama Hindu</option>
+<option>MPK-4005 - Pendidikan Agama Budha </option>
+<option>MPK-4008 - Bahasa Indonesia</option>
+<option>COM60010 - Pemrograman Dasar</option>
+<option>COM60013 - Pengantar Ilmu Komputer</option>
+<option>COM50012 - Matematika Komputasi</option>
+<option>CIF60113 - Sistem Digital</option>
+<option disabled>---SEMESTER 3---</option>
+<option>MPK-4007 - Pendidikan Pancasila</option>
+<option>CIF61230 - Algoritma & Struktur Data</option>
+<option>CID61132 - Metode Numerik</option>
+<option>CID61133 - Sistem Operasi</option>
+<option>CID61134 - Sistem Multimedia</option>
+<option>CID61236 - Sistem Basis Data</option>
+<option disabled>---SEMESTER 5---</option>
+<option>CIF61251 - Keamanan Informasi</option>
+<option>CIF61252 - Pengenalan Pola</option>
+<option>CIF61255 - Rekayasa Perangkat Lunak</option>
+<option>CIF61256 - Pemrograman Platform Khusus</option>
+<option>CIF61551 - Rekayasa & Manajemen Kebutuhan</option>
+<option>CIF61552 - Rekayasa Pengetahuan</option>
+<option>CIF61450 - Pengolahan Citra Digital</option>
+<option>CIF61451 - Text Mining</option>
+<option>CIF61453 - Sistem Pakar</option>
+<option>CIF61454 - Logika Fuzzy</option>
+<option>CIF61455 - Sistem Pendukung Keputusan</option>
+<option>CCE62361 - Administrasi Sistem Server</option>
+<option>CCE62161 - Administrasi Jaringan</option>
+<option>CIF61351 - Keamanan Jaringan</option>
+<option>CIF61651 - Perancangan Game</option>
+<option>CIF61652 - Pembuatan Konten 2D dan 3D</option>
+<option>CIF61654 - Pemrograman Aplikasi Perangkat Bergerak</option>
+<option disabled>---SEMESTER 7---</option>
+<option>COM60062 - Etika Profesi TI</option>
+<option>CIF61574 - Manajemen Konfigurasi Perangkat Lunak</option>
+<option>CIF61572 - Metode Formal dalam Rekayasa Perangkat Lunak</option>
+<option>CIF61573 - Rekayasa Embedded System</option>
+<option>CIF61571 - Web Semantik</option>
+<option>CIF61452 - Algoritma Evolusi</option>
+<option>CIF61456 - Analisis Big Data</option>
+<option>CIF61471 - Swarm Intelligence</option>
+<option>CCE61360 - Jaringan Nirkabel</option>
+<option>CIF61371 - Kriptografi</option>
+<option>TIF61673 - Augmented & Virtual Reality</option>
+<option>TIF61675 - Desain Kreatif Aplikasi & Game</option>
+<option>CIF60973 - Kewirausahaan Teknologi Informasi</option>
+<option>CIF60974 - Manajemen Industri Teknologi Informasi</option>
