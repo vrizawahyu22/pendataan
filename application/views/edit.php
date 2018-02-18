@@ -12,14 +12,17 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
 	</script>
 	<style type="text/css">
-	.tengahin{
-		margin: 20px 300px 10px 300px;
-	}
+	select{
+			margin-bottom: 5px;
+		}
 </style>
 </head>
-<body>
-	<div class="container-fluid">
-		<h1 class="text-center">Crisis Center KRS Semester Genap TA 2017/2018</h1>
+<body style="background-color: #35405a;">
+	<div class="container" style="background-color: white;">
+		<h1 class="text-center" ><b>Pendataan Mata Kuliah Semester Genap 2017/2018 untuk Batal/Tambah Mata Kuliah</b></h1>
+		<hr>
+		<label>Form ini digunakan untuk pendataan mahasiswa yang sampai saat ini masih belum mendapatakan kelas mata kuliah semester genap yang nantinya akan digunakan untuk acuan pembukaan kelas pada saat batal/tambah mata kuliah. Silahkan isi mata kuliah yang belum didapatkan.</label>
+		<hr>
 		<?php
 		foreach ($user as $u) {
 			if ($u->MATA_KULIAH_1 == "") {
@@ -71,14 +74,22 @@
 			}
 
 			if ($u->MATA_KULIAH_7 == "") {
-				$val7 = $u->MATA_KULIAH_4;
-				$label7 = "Mata Kuliah 4";
+				$val7 = $u->MATA_KULIAH_7;
+				$label7 = "Mata Kuliah 7";
 			} else {
 				$val7 = $u->MATA_KULIAH_7;
 				$label7 = $u->MATA_KULIAH_7;
 			}
+
+			if ($u->MATA_KULIAH_8 == "") {
+				$val8 = $u->MATA_KULIAH_8;
+				$label8 = "Mata Kuliah 8";
+			} else {
+				$val8 = $u->MATA_KULIAH_8;
+				$label8 = $u->MATA_KULIAH_8;
+			}
 			?>
-			<form class="tengahin" action="<?php echo base_url(). "matkul_smt_genap/update"; ?>" method="POST">
+			<form action="<?php echo base_url(). "matkul_smt_genap/update"; ?>" method="POST">
 				<div class="form-group">
 					<label>NIM</label>
 					<input type="number" class="form-control" placeholder="NIM" name="" value="<?php echo $u->NIM;?>" disabled>
@@ -144,19 +155,30 @@
 						<?php include "data_matkul_genap.txt" ?>
 					</select>
 				</div>
-
+				<div class="form-group">
+					<label>Mata Kuliah 8</label>
+					<select class="form-control" name="mata_kuliah_8">
+						<option value="<?php echo "$val8"; ?>"><?php echo $label8; ?></option>
+						<option value="">Mata Kuliah 8</option>
+						<?php include "data_matkul_genap.txt" ?>
+					</select>
+				</div>
 				<div class="form-group">
 					<label>Keluhan Seputar KRS (boleh dikosongi)</label><br>
 					<textarea class="form-control" rows="4" cols="100" name="keluhan"><?php echo $u->KELUHAN; ?></textarea>
 				</div>
-				<button type="submit" class="btn btn-primary" name="submit">Submit</button>
+
+				<button type="submit" class="btn btn-primary btn-block" name="submit"><b>Update</b></button>
 			</form>
 			<?php } ?>
-		</div>
-		<p class="text-center" style="font:14px;">
+			<hr>
+			<label>NB : Form ini hanya bertujuan untuk mengetahui jumlah kelas yang dibutuhkan. Mahasiswa harus melakukan proses batal tambah sendiri ke akademik. Batal tambah akan diadakan di minggu pertama kuliah yang nantinya akan mengisi di link <a href="#" onclick="window.open('http://filkom.ub.ac.id/info/akademik/bataltambah')">Batal/Tambah</a>.</label>
+			<hr>
+			<p class="text-center" style="font:14px;"><b>
 			&copy; Departemen Advokasi dan Kesejahteraan Mahasiswa<br>
 			Eksekutif Mahasiswa Informatika UB 2017<br>
 			#AndalanKita<br>
-		#SatuPaduInformatika</p>
+			#SatuPaduInformatika </b></p>
+		</div>
 	</body>
 	</html>

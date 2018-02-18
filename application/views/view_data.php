@@ -49,7 +49,7 @@
 </head>
 <body>
 	<div class="container-fluid">
-		<h1 class="text-center">DATA CC KRS INFORMATIKA TA 2016/2017</h1>
+		<h1 class="text-center">DATA CC KRS INFORMATIKA TA 2017/2018</h1>
 		<form class="tengahin" action="" method="POST">
 			<div class="form-group">
 				<label>Mata Kuliah</label>

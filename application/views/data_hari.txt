@@ -1,0 +1,6 @@
+<option value="" >Hari</option>
+<option >Senin</option>
+<option >Selasa</option>
+<option >Rabu</option>
+<option >Kamis</option>
+<option >Jumat</option>

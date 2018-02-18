@@ -1,11 +1,11 @@
 <?php
 header("Content-type: application/vnd-ms-excel");
  
- header("Content-Disposition: attachment; filename=Rekap_all_matkul_$temp.xls");
+header("Content-Disposition: attachment; filename=Rekap Mata Kuliah Semester Genap Prodi Teknik Informatika $temp.xls");
  
- header("Pragma: no-cache");
+header("Pragma: no-cache");
  
- header("Expires: 0");
+header("Expires: 0");
 $nama_matkul = array(
 	" ",
 	"MPK-4001 - Pendidikan Agama Islam",
@@ -104,1485 +104,1554 @@ $nama_matkul = array(
 		<title>Data Semua Matkul</title>
 	</head>
 		<body>
+		<h3><b>Pendataan Mata Kuliah Semester Genap 2017/2018 Prodi Teknik Informatika</b></h3>
 		<?php 
 		//matkul1
-		if($stat1 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[1]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul1 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul2
-		if($stat2 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[2]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul2 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul3
-		if($stat3 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[3]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul3 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul4
-		if($stat4 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[4]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul4 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul5
-		if($stat5 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[5]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul5 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul6
-		if($stat6 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[6]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul6 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul7
-		if($stat7 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[7]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul7 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul8
-		if($stat8 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[8]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul8 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul9
-		if($stat9 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[9]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul9 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul10
-		if($stat10 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[10]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul10 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul11
-		if($stat11 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[11]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul11 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul12
-		if($stat12 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[12]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul12 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul13
-		if($stat13 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[13]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul13 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul14
-		if($stat14 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[14]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul14 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul15
-		if($stat15 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[15]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul15 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul16
-		if($stat16 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[16]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul16 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul17
-		if($stat17 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[17]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul17 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul18
-		if($stat18 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[18]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul18 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul19
-		if($stat19 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[19]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul19 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul20
-		if($stat20 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[20]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul20 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul21
-		if($stat21 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[21]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul21 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul22
-		if($stat22 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[22]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul22 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul23
-		if($stat23 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[23]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul23 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul24
-		if($stat24 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[24]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul24 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul25
-		if($stat25 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[25]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul25 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul26
-		if($stat26 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[26]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul26 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul27
-		if($stat27 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[27]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul27 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul28
-		if($stat28 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[28]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul28 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul29
-		if($stat29 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[29]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul29 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul30
-		if($stat30 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[30]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul30 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul31
-		if($stat31 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[31]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul31 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul32
-		if($stat32 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[32]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul32 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul33
-		if($stat33 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[33]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul33 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul34
-		if($stat34 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[34]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul34 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul35
-		if($stat35 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[35]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul35 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul36
-		if($stat36 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[36]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul36 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul37
-		if($stat37 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[37]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul37 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul38
-		if($stat38 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[38]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul38 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul39
-		if($stat39 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[39]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul39 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul40
-		if($stat40 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[40]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul40 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul41
-		if($stat41 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[41]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul41 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul42
-		if($stat42 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[42]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul42 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul43
-		if($stat43 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[43]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul43 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul44
-		if($stat44 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[44]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul44 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul45
-		if($stat45 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[45]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul45 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul46
-		if($stat46 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[46]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul46 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul47
-		if($stat47 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[47]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul47 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul48
-		if($stat48 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[48]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul48 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul49
-		if($stat49 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[49]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul49 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul50
-		if($stat50 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[50]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul50 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul51
-		if($stat51 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[51]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul51 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul52
-		if($stat52 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[52]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul52 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul53
-		if($stat53 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[53]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul53 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul54
-		if($stat54 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[54]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul54 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul55
-		if($stat55 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[55]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul55 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul56
-		if($stat56 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[56]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul56 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul57
-		if($stat57 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[57]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul57 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul58
-		if($stat58 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[58]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul58 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul59
-		if($stat59 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[59]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul59 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul60
-		if($stat60 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[60]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul60 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul61
-		if($stat61 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[61]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul61 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul62
-		if($stat62 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[62]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul62 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul63
-		if($stat63 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[63]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul63 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul64
-		if($stat64 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[64]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul64 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul65
-		if($stat65 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[65]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul65 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul66
-		if($stat66 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[66]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul66 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul67
-		if($stat67 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[67]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul67 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul68
-		if($stat68 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[68]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul68 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul69
-		if($stat69 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[69]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul69 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul70
-		if($stat70 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[70]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul70 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul71
-		if($stat71 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[71]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul71 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul72
-		if($stat72 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[72]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul72 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul73
-		if($stat73 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[73]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul73 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul74
-		if($stat74 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[74]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul74 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul75
-		if($stat75 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[75]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul75 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul76
-		if($stat76 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[76]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul76 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul77
-		if($stat77 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[77]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul77 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul78
-		if($stat78 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[78]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul78 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul79
-		if($stat79 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[79]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul79 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul80
-		if($stat80 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[80]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul80 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul81
-		if($stat81 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[81]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul81 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul82
-		if($stat82 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[82]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul82 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul83
-		if($stat83 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[83]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul83 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul84
-		if($stat84 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[84]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul84 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul85
-		if($stat85 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[85]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul85 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul86
-		if($stat86 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[86]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul86 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
-
-		//matkul87
-		if($stat87 == "ada isi"){
-			echo "<div class=\"container-fluid\">";
-			echo "<h4>$nama_matkul[87]</h4>";
-			echo "<table border=\"1\">";
-			echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
-			$no = 1;
-			foreach($matkul87 as $m){
-				echo "<tr>";
-				echo "<td>"; echo $no++; echo"</td>";
-				
-				echo "<td>$m->NIM</td>";
-				echo "<td>$m->NAMA_LENGKAP</td>";
-				echo "</tr>";
-			}echo "</table>"; echo "</div><br>";
-		}
+	for ($i=1; $i <=87 ; $i++) { 
+		if($stat[$i] == "ada isi"){
+		echo "<div class=\"container-fluid\">";
+		echo "<h4>$nama_matkul[$i]</h4>";
+		echo "<table border=\"1\" class=\"text-center\">";
+		echo "<tr><td style=\"width:30px;\">NO</td><td style=\"width:200px;\">NIM</td><td style =\"width:250px;\">NAMA LENGKAP</td></tr>";
+		$no = 1;
+			foreach($matkul[$i] as $m){
+					if ($m->MATA_KULIAH_1 == $nama_matkul[$i]) {
+						echo "<tr>";
+						echo "<td>"; echo $no++; echo"</td>";
+						echo "<td>$m->NIM</td>";
+						echo "<td>$m->NAMA_LENGKAP</td>";
+						echo "</tr>";
+					}
+					elseif ($m->MATA_KULIAH_2 == $nama_matkul[$i]) {
+						echo "<tr>";
+						echo "<td>"; echo $no++; echo"</td>";
+						echo "<td>$m->NIM</td>";
+						echo "<td>$m->NAMA_LENGKAP</td>";
+						echo "</tr>";
+					}
+					elseif ($m->MATA_KULIAH_3 == $nama_matkul[$i]) {
+						echo "<tr>";
+						echo "<td>"; echo $no++; echo"</td>";
+						echo "<td>$m->NIM</td>";
+						echo "<td>$m->NAMA_LENGKAP</td>";
+						echo "</tr>";
+					}
+					elseif ($m->MATA_KULIAH_4 == $nama_matkul[$i]) {
+						echo "<tr>";
+						echo "<td>"; echo $no++; echo"</td>";
+						echo "<td>$m->NIM</td>";
+						echo "<td>$m->NAMA_LENGKAP</td>";
+						echo "</tr>";
+					}
+					elseif ($m->MATA_KULIAH_5 == $nama_matkul[$i]) {
+						echo "<tr>";
+						echo "<td>"; echo $no++; echo"</td>";
+						echo "<td>$m->NIM</td>";
+						echo "<td>$m->NAMA_LENGKAP</td>";
+						echo "</tr>";
+					}
+					elseif ($m->MATA_KULIAH_6 == $nama_matkul[$i]) {
+						echo "<tr>";
+						echo "<td>"; echo $no++; echo"</td>";
+						echo "<td>$m->NIM</td>";
+						echo "<td>$m->NAMA_LENGKAP</td>";
+						echo "</tr>";
+					}
+					elseif ($m->MATA_KULIAH_7 == $nama_matkul[$i]) {
+						echo "<tr>";
+						echo "<td>"; echo $no++; echo"</td>";
+						echo "<td>$m->NIM</td>";
+						echo "<td>$m->NAMA_LENGKAP</td>";
+						echo "</tr>";
+					}
+					elseif ($m->MATA_KULIAH_8 == $nama_matkul[$i]) {
+						echo "<tr>";
+						echo "<td>"; echo $no++; echo"</td>";
+						echo "<td>$m->NIM</td>";
+						echo "<td>$m->NAMA_LENGKAP</td>";
+						echo "</tr>";
+					}
+			}echo "</table>"; echo "</div>";
+		}
+	}
+		// //matkul1
+		// if($stat1 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[1]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul1 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul2
+		// if($stat2 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[2]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul2 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul3
+		// if($stat3 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[3]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul3 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul4
+		// if($stat4 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[4]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul4 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul5
+		// if($stat5 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[5]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul5 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul6
+		// if($stat6 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[6]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul6 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul7
+		// if($stat7 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[7]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul7 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul8
+		// if($stat8 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[8]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul8 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul9
+		// if($stat9 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[9]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul9 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul10
+		// if($stat10 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[10]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul10 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul11
+		// if($stat11 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[11]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul11 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul12
+		// if($stat12 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[12]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul12 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul13
+		// if($stat13 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[13]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul13 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul14
+		// if($stat14 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[14]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul14 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul15
+		// if($stat15 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[15]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul15 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul16
+		// if($stat16 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[16]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul16 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul17
+		// if($stat17 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[17]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul17 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul18
+		// if($stat18 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[18]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul18 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul19
+		// if($stat19 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[19]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul19 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul20
+		// if($stat20 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[20]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul20 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul21
+		// if($stat21 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[21]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul21 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul22
+		// if($stat22 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[22]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul22 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul23
+		// if($stat23 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[23]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul23 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul24
+		// if($stat24 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[24]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul24 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul25
+		// if($stat25 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[25]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul25 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul26
+		// if($stat26 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[26]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul26 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul27
+		// if($stat27 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[27]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul27 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul28
+		// if($stat28 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[28]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul28 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul29
+		// if($stat29 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[29]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul29 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul30
+		// if($stat30 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[30]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul30 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul31
+		// if($stat31 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[31]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul31 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul32
+		// if($stat32 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[32]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul32 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul33
+		// if($stat33 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[33]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul33 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul34
+		// if($stat34 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[34]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul34 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul35
+		// if($stat35 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[35]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul35 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul36
+		// if($stat36 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[36]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul36 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul37
+		// if($stat37 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[37]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul37 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul38
+		// if($stat38 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[38]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul38 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul39
+		// if($stat39 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[39]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul39 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul40
+		// if($stat40 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[40]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul40 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul41
+		// if($stat41 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[41]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul41 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul42
+		// if($stat42 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[42]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul42 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul43
+		// if($stat43 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[43]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul43 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul44
+		// if($stat44 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[44]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul44 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul45
+		// if($stat45 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[45]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul45 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul46
+		// if($stat46 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[46]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul46 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul47
+		// if($stat47 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[47]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul47 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul48
+		// if($stat48 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[48]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul48 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul49
+		// if($stat49 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[49]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul49 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul50
+		// if($stat50 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[50]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul50 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul51
+		// if($stat51 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[51]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul51 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul52
+		// if($stat52 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[52]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul52 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul53
+		// if($stat53 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[53]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul53 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul54
+		// if($stat54 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[54]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul54 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul55
+		// if($stat55 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[55]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul55 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul56
+		// if($stat56 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[56]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul56 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul57
+		// if($stat57 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[57]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul57 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul58
+		// if($stat58 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[58]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul58 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul59
+		// if($stat59 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[59]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul59 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul60
+		// if($stat60 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[60]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul60 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul61
+		// if($stat61 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[61]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul61 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul62
+		// if($stat62 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[62]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul62 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul63
+		// if($stat63 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[63]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul63 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul64
+		// if($stat64 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[64]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul64 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul65
+		// if($stat65 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[65]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul65 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul66
+		// if($stat66 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[66]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul66 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul67
+		// if($stat67 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[67]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul67 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul68
+		// if($stat68 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[68]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul68 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul69
+		// if($stat69 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[69]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul69 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul70
+		// if($stat70 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[70]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul70 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul71
+		// if($stat71 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[71]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul71 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul72
+		// if($stat72 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[72]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul72 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul73
+		// if($stat73 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[73]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul73 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul74
+		// if($stat74 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[74]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul74 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul75
+		// if($stat75 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[75]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul75 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul76
+		// if($stat76 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[76]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul76 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul77
+		// if($stat77 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[77]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul77 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul78
+		// if($stat78 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[78]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul78 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul79
+		// if($stat79 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[79]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul79 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul80
+		// if($stat80 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[80]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul80 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul81
+		// if($stat81 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[81]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul81 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul82
+		// if($stat82 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[82]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul82 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul83
+		// if($stat83 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[83]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul83 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul84
+		// if($stat84 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[84]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul84 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul85
+		// if($stat85 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[85]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul85 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul86
+		// if($stat86 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[86]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul86 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
+
+		// //matkul87
+		// if($stat87 == "ada isi"){
+		// 	echo "<div class=\"container-fluid\">";
+		// 	echo "<h4>$nama_matkul[87]</h4>";
+		// 	echo "<table border=\"1\">";
+		// 	echo "<tr><td>NO</td><td>NIM</td><td>NAMA LENGKAP</td></tr>";
+		// 	$no = 1;
+		// 	foreach($matkul87 as $m){
+		// 		echo "<tr>";
+		// 		echo "<td>"; echo $no++; echo"</td>";
+				
+		// 		echo "<td>$m->NIM</td>";
+		// 		echo "<td>$m->NAMA_LENGKAP</td>";
+		// 		echo "</tr>";
+		// 	}echo "</table>"; echo "</div><br>";
+		// }
 		?>
 	</body>
 </html>

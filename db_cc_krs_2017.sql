@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.6.5.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 24, 2017 at 08:30 AM
--- Server version: 10.1.28-MariaDB
--- PHP Version: 7.1.10
+-- Generation Time: Jan 24, 2018 at 03:41 PM
+-- Server version: 10.1.21-MariaDB
+-- PHP Version: 7.1.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -21,8 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `db_cc_krs_2017`
 --
-CREATE DATABASE IF NOT EXISTS `db_cc_krs_2017` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `db_cc_krs_2017`;
 
 -- --------------------------------------------------------
 
@@ -35,14 +31,43 @@ CREATE TABLE `data_krs` (
   `NAMA_LENGKAP` varchar(50) NOT NULL,
   `NIM` varchar(15) NOT NULL,
   `MATA_KULIAH_1` varchar(100) DEFAULT NULL,
+  `HARI_1` varchar(100) DEFAULT NULL,
+  `JAM_MULAI_1` varchar(50) DEFAULT NULL,
+  `JAM_SELESAI_1` varchar(50) DEFAULT NULL,
   `MATA_KULIAH_2` varchar(100) DEFAULT NULL,
+  `HARI_2` varchar(50) DEFAULT NULL,
+  `JAM_MULAI_2` varchar(50) DEFAULT NULL,
+  `JAM_SELESAI_2` varchar(50) DEFAULT NULL,
   `MATA_KULIAH_3` varchar(100) DEFAULT NULL,
+  `HARI_3` varchar(50) DEFAULT NULL,
+  `JAM_MULAI_3` varchar(50) DEFAULT NULL,
+  `JAM_SELESAI_3` varchar(50) DEFAULT NULL,
   `MATA_KULIAH_4` varchar(100) DEFAULT NULL,
+  `HARI_4` varchar(50) DEFAULT NULL,
+  `JAM_MULAI_4` varchar(50) DEFAULT NULL,
+  `JAM_SELESAI_4` varchar(50) DEFAULT NULL,
   `MATA_KULIAH_5` varchar(100) DEFAULT NULL,
+  `HARI_5` varchar(50) DEFAULT NULL,
+  `JAM_MULAI_5` varchar(50) DEFAULT NULL,
+  `JAM_SELESAI_5` varchar(50) DEFAULT NULL,
   `MATA_KULIAH_6` varchar(100) DEFAULT NULL,
+  `HARI_6` varchar(50) DEFAULT NULL,
+  `JAM_MULAI_6` varchar(50) DEFAULT NULL,
+  `JAM_SELESAI_6` varchar(50) DEFAULT NULL,
   `MATA_KULIAH_7` varchar(100) DEFAULT NULL,
+  `HARI_7` varchar(50) DEFAULT NULL,
+  `JAM_MULAI_7` varchar(50) DEFAULT NULL,
+  `JAM_SELESAI_7` varchar(50) DEFAULT NULL,
   `KELUHAN` varchar(5000) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `data_krs`
+--
+
+INSERT INTO `data_krs` (`TIMESTAMP`, `NAMA_LENGKAP`, `NIM`, `MATA_KULIAH_1`, `HARI_1`, `JAM_MULAI_1`, `JAM_SELESAI_1`, `MATA_KULIAH_2`, `HARI_2`, `JAM_MULAI_2`, `JAM_SELESAI_2`, `MATA_KULIAH_3`, `HARI_3`, `JAM_MULAI_3`, `JAM_SELESAI_3`, `MATA_KULIAH_4`, `HARI_4`, `JAM_MULAI_4`, `JAM_SELESAI_4`, `MATA_KULIAH_5`, `HARI_5`, `JAM_MULAI_5`, `JAM_SELESAI_5`, `MATA_KULIAH_6`, `HARI_6`, `JAM_MULAI_6`, `JAM_SELESAI_6`, `MATA_KULIAH_7`, `HARI_7`, `JAM_MULAI_7`, `JAM_SELESAI_7`, `KELUHAN`) VALUES
+('2018-01-24 12:48:46', 'Vriza Wahyu Saputra', '155150200111246', 'COM60011 - Arsitektur & Organisasi Komputer', 'Senin', '07:50', '09:30', 'UBU-4008 - Bahasa Inggris', 'Selasa', '08:40', '10:20', 'CID62122 - Interaksi Manusia & Komputer', 'Rabu', '10:20', '14:30', 'CIF62242 - Kecerdasan Buatan', 'Kamis', '12:50', '14:30', 'CIF62564 - Administrasi Basis Data', 'Selasa', '14:30', '13:40', 'MPK-4006 - Kewarganegaraan', 'Rabu', '13:40', '15:20', 'CIF62564 - Administrasi Basis Data', 'Selasa', '13:40', '16:10', ''),
+('2018-01-24 14:39:53', 'Aryun nadaa', '145150200111246', 'CID62120 - Pemrograman Lanjut', 'Selasa', '07:50', '07:50', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'Jam selesai', '', '', '', '', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -171,8 +196,6 @@ ALTER TABLE `db_matkul`
 --
 ALTER TABLE `db_matkul`
   MODIFY `NO` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=88;
-COMMIT;
-
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

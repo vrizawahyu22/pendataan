@@ -28,9 +28,10 @@ class M_data extends CI_Model{
 		MATA_KULIAH_4 LIKE ? OR
 		MATA_KULIAH_5 LIKE ? OR
 		MATA_KULIAH_6 LIKE ? OR
-		MATA_KULIAH_7 LIKE ? 
+		MATA_KULIAH_7 LIKE ? OR
+		MATA_KULIAH_8 LIKE ? 
 		";
-		return $this->db->query($sql,array($mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah));
+		return $this->db->query($sql,array($mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah));
 	}
 
 	function view_data_matkul_2011_2013($mata_kuliah){
@@ -48,10 +49,11 @@ class M_data extends CI_Model{
 		MATA_KULIAH_4 LIKE ? OR
 		MATA_KULIAH_5 LIKE ? OR
 		MATA_KULIAH_6 LIKE ? OR
-		MATA_KULIAH_7 LIKE ? 
+		MATA_KULIAH_7 LIKE ? OR
+		MATA_KULIAH_8 LIKE ? 
 		))
 		";
-		return $this->db->query($sql,array($nim[0],$nim[1],$nim[2],$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah));
+		return $this->db->query($sql,array($nim[0],$nim[1],$nim[2],$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah));
 	}
 
 	function view_data_matkul_2014($mata_kuliah){
@@ -63,10 +65,11 @@ class M_data extends CI_Model{
 		MATA_KULIAH_4 LIKE ? OR
 		MATA_KULIAH_5 LIKE ? OR
 		MATA_KULIAH_6 LIKE ? OR
-		MATA_KULIAH_7 LIKE ? 
+		MATA_KULIAH_7 LIKE ? OR
+		MATA_KULIAH_8 LIKE ? 
 		)
 		";
-		return $this->db->query($sql,array($nim,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah));
+		return $this->db->query($sql,array($nim,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah));
 	}
 
 	function view_data_matkul_2015($mata_kuliah){
@@ -78,10 +81,11 @@ class M_data extends CI_Model{
 		MATA_KULIAH_4 LIKE ? OR
 		MATA_KULIAH_5 LIKE ? OR
 		MATA_KULIAH_6 LIKE ? OR
-		MATA_KULIAH_7 LIKE ? 
+		MATA_KULIAH_7 LIKE ? OR
+		MATA_KULIAH_8 LIKE ? 
 		)
 		";
-		return $this->db->query($sql,array($nim,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah));
+		return $this->db->query($sql,array($nim,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah));
 	}
 
 	function view_data_matkul_2016($mata_kuliah){
@@ -94,10 +98,11 @@ class M_data extends CI_Model{
 		MATA_KULIAH_4 LIKE ? OR
 		MATA_KULIAH_5 LIKE ? OR
 		MATA_KULIAH_6 LIKE ? OR
-		MATA_KULIAH_7 LIKE ? 
+		MATA_KULIAH_7 LIKE ? OR
+		MATA_KULIAH_8 LIKE ? 
 		)
 		";
-		return $this->db->query($sql,array($nim,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah));
+		return $this->db->query($sql,array($nim,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah));
 	}
 
 	function view_keluhan(){
