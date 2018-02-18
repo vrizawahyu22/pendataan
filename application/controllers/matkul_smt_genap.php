@@ -76,6 +76,7 @@ class Matkul_smt_genap extends CI_Controller {
 	{
 		$nama_lengkap = $this->input->post('nama_lengkap');
 		$nim = $this->input->post('nim');
+		$jumlah_sks = $this->input->post('jumlah_sks');
 		$mata_kuliah_1 = $this->input->post('mata_kuliah_1');
 		$mata_kuliah_2 = $this->input->post('mata_kuliah_2');
 		$mata_kuliah_3 = $this->input->post('mata_kuliah_3');
@@ -117,6 +118,7 @@ class Matkul_smt_genap extends CI_Controller {
 		$data = array(
 			'nama_lengkap' => $nama_lengkap,
 			'nim' => $nim,
+			'jumlah_sks_saat_ini' => $jumlah_sks,
 			'mata_kuliah_1' => $mata_kuliah_1,
 			// 'hari_1' => $hari_matkul_1,
 			// 'jam_mulai_1' => $jam_matkul_mulai1,
@@ -202,6 +204,7 @@ class Matkul_smt_genap extends CI_Controller {
 	{
 		$nama_lengkap = $this->input->post('nama_lengkap');
 		$nim = $this->input->post('nim');
+		$jumlah_sks = $this->input->post('jumlah_sks');
 		$mata_kuliah_1 = $this->input->post('mata_kuliah_1');
 		$mata_kuliah_2 = $this->input->post('mata_kuliah_2');
 		$mata_kuliah_3 = $this->input->post('mata_kuliah_3');
@@ -241,6 +244,7 @@ class Matkul_smt_genap extends CI_Controller {
 		$data = array(
 			'nama_lengkap' => $nama_lengkap,
 			'nim' => $nim,
+			'jumlah_sks_saat_ini' => $jumlah_sks,
 			'mata_kuliah_1' => $mata_kuliah_1,
 			// 'hari_1' => $hari_matkul_1,
 			// 'jam_mulai_1' => $jam_matkul_mulai1,
@@ -292,6 +296,24 @@ class Matkul_smt_genap extends CI_Controller {
 			'keluhan' => $this->m_data->view_keluhan()->result()
 		);
 		$this->load->view('view_keluhan_table_export',$data);
+	}
+
+	function view_data_per_mahasiswa(){
+		$data = array(
+			'data_mhs' => $this->m_data->view_data_per_mahasiswa()->result()
+		); 
+
+		$this->load->view('view_bataltambah',$data);
+		
+	}
+
+	function export_data_per_mahasiswa(){
+		$data = array(
+			'data_mhs' => $this->m_data->view_data_per_mahasiswa()->result()
+		); 
+
+		$this->load->view('view_bataltambah_export',$data);
+		
 	}
 
 	function view_all(){

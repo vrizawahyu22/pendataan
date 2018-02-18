@@ -105,6 +105,13 @@ class M_data extends CI_Model{
 		return $this->db->query($sql,array($nim,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah,$mata_kuliah));
 	}
 
+	function view_data_per_mahasiswa(){
+		
+		$sql = "SELECT * FROM data_krs 
+		";
+		return $this->db->query($sql);
+	}
+
 	function view_keluhan(){
 		$sql = "SELECT * FROM data_krs WHERE KELUHAN IS NOT NULL AND KELUHAN <> ''";
 		return $this->db->query($sql);

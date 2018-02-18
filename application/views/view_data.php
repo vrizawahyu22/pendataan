@@ -27,6 +27,10 @@
 	if (isset($_POST['submit_2016'])) {
 		redirect(base_url()."matkul_smt_genap/view_all_2016");
 	}
+
+	if (isset($_POST['submit_all_per_mhs'])) {
+		redirect(base_url()."matkul_smt_genap/view_data_per_mahasiswa");
+	}
 ?>
 
 <!DOCTYPE html>
@@ -61,7 +65,8 @@
 			<center><button type="submit" class="btn btn-primary" name="submit">View Data</button>
 			<h2>Atau</h2>
 			<button type="submit" class="btn btn-danger text-center" name="submit_keluhan">View Data Keluhan</button>
-			<button type="submit" class="btn btn-success text-center" name="submit_all">View ALL Data</button>
+			<button type="submit" class="btn btn-success text-center" name="submit_all">View ALL Data Per Matkul</button>
+			<button type="submit" class="btn btn-warning text-center" name="submit_all_per_mhs">View ALL Data per Mahasiswa</button>
 			<h2>Angkatan</h2>
 			<button type="submit" class="btn btn-danger text-center" name="submit_2011_2013">2011-2013</button>
 			<button type="submit" class="btn btn-warning text-center" name="submit_2014">2014</button>

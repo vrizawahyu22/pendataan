@@ -41,6 +41,10 @@
 					<input type="number" class="form-control" placeholder="NIM (wajib diisi)" name="nim" required="">
 				</div>
 				<div class="form-group">
+					<label>Jumlah SKS Sekarang</label>
+					<input type="number" class="form-control" placeholder="Jumlah SKS" name="jumlah_sks" required="">
+				</div>
+				<div class="form-group">
 					<label>Mata Kuliah 1</label>
 
 					<select class="form-control" name="mata_kuliah_1">

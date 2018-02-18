@@ -88,6 +88,8 @@
 				$val8 = $u->MATA_KULIAH_8;
 				$label8 = $u->MATA_KULIAH_8;
 			}
+
+			
 			?>
 			<form action="<?php echo base_url(). "matkul_smt_genap/update"; ?>" method="POST">
 				<div class="form-group">
@@ -98,6 +100,10 @@
 				<div class="form-group">
 					<label>Nama Lengkap</label>
 					<input type="text" class="form-control" placeholder="Nama Lengkap" name="nama_lengkap" required="" value="<?php echo $u->NAMA_LENGKAP;?>">
+				</div>
+				<div class="form-group">
+					<label>Nama Lengkap</label>
+					<input type="number" class="form-control" placeholder="Jumlah SKS Saat Ini" name="jumlah_sks" required="" value="<?php echo $u->JUMLAH_SKS_SAAT_INI;?>">
 				</div>
 				<div class="form-group">
 					<label>Mata Kuliah 1</label>
